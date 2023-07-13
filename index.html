@@ -39,7 +39,15 @@
 
         <p class="lastrow">Full access for less than &dollar;1 a day</p>
 
-        <input type="button" value="Sign Up">
+        <input type="button" value="Sign Up" onclick="buttonClicked()" >
+  
+        <script>
+        function buttonClicked() {
+            document.querySelector(".button").onclick = function() {
+                alert("Button Clicked");
+            }
+        }
+      </script>
       </li>
       <li class="lower2">
         <h3>Why Us</h3>
